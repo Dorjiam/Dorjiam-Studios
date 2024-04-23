@@ -5,12 +5,38 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{% block title %} Dorjiam Studios {% endblock %}</title>
+
+		<!-- Remix Icon -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Stylesheets -->
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/base.css' %}?{% now 'U' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/header.css' %}?{% now 'U' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/footer.css' %}?{% now 'U' %}"
+		/>
 	</head>
 	<body>
-		{% include 'components/header' %}
+		{% include 'components/header.html' %}
 
 		<main>{% block content %}{% endblock %}</main>
 
-		{% include 'components/footer' %}
+		{% include 'components/footer.html' %}
+
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/881b6155cd.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
