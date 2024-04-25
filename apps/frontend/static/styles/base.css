@@ -29,3 +29,37 @@ body {
 main {
 	width: 100dvw;
 }
+
+main * {
+	animation: to-right 1s ease 0.9;
+}
+
+header {
+	animation: to-bottom 1s ease forwards;
+}
+
+footer .footer-inner * {
+	animation: to-right 1s ease forwards;
+}
+
+@keyframes to-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes to-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
