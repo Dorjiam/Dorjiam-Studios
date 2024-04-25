@@ -25,3 +25,7 @@ body {
 	background-position: center;
 	overflow-y: hidden;
 }
+
+main {
+	width: 100dvw;
+}
