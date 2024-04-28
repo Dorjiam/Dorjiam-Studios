@@ -4,6 +4,7 @@
 	align-items: center;
 	flex-flow: column;
 	height: 80dvh;
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .greeting {
@@ -31,4 +32,13 @@
 	text-wrap: wrap;
 	text-align: center;
 	margin-top: 20px;
+}
+
+@keyframes up-down {
+	0% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
 }
